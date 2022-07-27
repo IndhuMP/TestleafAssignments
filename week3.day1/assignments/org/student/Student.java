@@ -1,4 +1,4 @@
-package org.department;
+package org.student;
 
 public class Student extends Department {
 	
