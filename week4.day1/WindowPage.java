@@ -80,7 +80,11 @@ public class WindowPage {
 				
 				driver.findElement(By.xpath("//button[text()='Wait for 5 seconds']")).click();
 				
-				Thread.sleep(5000);
+				//Thread.sleep(5000);
+				
+				//using explicitly wait
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+				wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Wait for 5 seconds']")));
 				
 				System.out.println("Wait done!");
 				driver.quit();
