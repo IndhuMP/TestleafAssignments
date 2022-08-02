@@ -45,9 +45,6 @@ public class AdministratorPage {
 		//click on the login button
 		driver.findElement(By.id("Login")).click();
 		
-		//get the window handle of initial page
-		String parent = driver.getWindowHandle();
-		
 		//click on the learn more option in the Mobile publisher
 		driver.findElement(By.xpath("//span[text()='Learn More']")).click();
 				
