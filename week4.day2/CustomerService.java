@@ -1,13 +1,11 @@
 package week4.day2;
 
-import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,9 +42,6 @@ public class CustomerService {
 				
 		//click on the login button
 		driver.findElement(By.id("Login")).click();
-		
-		//get the window handle of initial page
-		String parent = driver.getWindowHandle();
 		
 		//click on the learn more option in the Mobile publisher
 		driver.findElement(By.xpath("//span[text()='Learn More']")).click();
